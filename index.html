@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/reveal.css" rel="stylesheet">
+    <link href="bower_components/bulma/css/bulma.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/reveal.js/3.7.0/css/print/paper.css" rel="stylesheet">
+    <title>Создание презентаций</title>
+    <style>
+        textarea {
+    overflow-y: scroll;
+    resize: none; /* Remove this if you want the user to resize the textarea */
+}
+    </style>
+</head>
+
+<body>
+        <div class="container">
+        <div class="columns">
+               
+                <div class="column is-5 ">
+                        <br>
+                    <p class=" title ">
+                            Генератор html презентации
+                    </p>
+                    <br>
+                    <!-- <p class="sub-titile"> <a href="https://revealjs.com/#/"> Reval.js</a> 
+                    <a href="https://github.com/eligrey/FileSaver.js/"> FileSaver.js</a>  -->
+
+                <h2 class="subtitle"> 
+                    <input class="input is-medium" type="text" id="name_" placeholder="Название презентации" required>
+                    
+                </h2>
+                
+                    <button class="button is-medium is-link is-unselectable button is-text" id="save-btn" onclick="SaveText();">
+                        Сохранить презентацию
+                    </button>
+                </div>
+            
+            <div class="column column is-4">
+                    <br>
+                    <br>
+                    <br>
+                <div class="content is-medium">
+                 <a href="example.html">Пример генерации презентации</a>
+                 <a href="draft.txt">Пример черновика</a>
+                 <br>
+                 <a href="https://paulradzkov.com/2014/markdown_cheatsheet/">Таблица по языку разметки markdown</a>
+                </div>
+        </div>
+        </div>
+                        
+            <div class="container">
+            </div>
+                <div class="columns is-mobile">
+                    <!-- <h2 class="subtitle"> Текс слайда: </h2> -->
+                    <div class="column is-8">
+                    <textarea class="textarea is-medium" placeholder="текст презентации" id="sourceTA" rows="13" cols="82">
+## Создание  генератора презентации 
+---
+<!-- .slide: data-background="#06095e" -->
+## Цели
+- Разработать мультимедиа продукт
+---
+## Задачи
+*  gjfdlgjfldk
+*   lkjdfgjdlgjdfl
+*   kfdjdlgjlfdjg
+---
+<!-- .slide: data-background="#601f3f" -->
+## Используемые технологии
+* [Reval.js](https://revealjs.com/#/)
+* [FileSaver](https://github.com/eligrey/FileSaver.js/)
+                    
+                    </textarea>
+                    <br />
+                    <a class="button is-medium" onclick="SavePreText()">Сохранить черновик</a>
+                
+                </div>
+                <div class="column is-4 ">
+                        <div class="control">
+                            <label class="radio">
+                                <br />
+                                    <h2 class="subtitle">Выбор темы: </h2>
+                                    <input type="radio" value="0" name="r_theme" checked>
+                                    Простая
+                            </label>
+                            <br>
+                            <label class="radio">
+                                <input type="radio" value="1" name="r_theme">
+                                Темная
+                            </label>
+                            <br>
+                        <label class="radio">
+                            <input type="radio" value="2" name="r_theme">
+                            Светлая
+                        </label>
+                        <br>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" value="3" name="r_theme">
+                        Ночная
+                    </label>
+                        </div>
+                        </div>
+                </div>          
+            </div>
+        </div>
+        </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/js/reveal.min.js"></script> -->
+    <script type="text/javascript" src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

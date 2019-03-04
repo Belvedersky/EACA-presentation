@@ -1,0 +1,15 @@
+﻿## Создание  генератора презентации 
+---
+<!-- .slide: data-background="#06095e" -->
+## Цели
+- Разработать мультимедиа продукт
+---
+## Задачи
+*  gjfdlgjfldk
+*   lkjdfgjdlgjdfl
+*   kfdjdlgjlfdjg
+---
+<!-- .slide: data-background="#601f3f" -->
+## Используемые технологии
+* [Reval.js](https://revealjs.com/#/)
+* [FileSaver](https://github.com/eligrey/FileSaver.js/)
